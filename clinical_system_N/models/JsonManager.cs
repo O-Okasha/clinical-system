@@ -16,7 +16,7 @@ namespace clinical_system_N.models
         public List<object> itemList;
 
 
-        public void LoadJson(JsonType enumType, string patientID)
+        private string LoadJson(JsonType enumType, string patientID)
         {
             string DataPath = Path.Combine(Path.Combine(GlobalVariables.PathToPatients, patientID), "Data");
             if (enumType == JsonType.History)
@@ -47,28 +47,30 @@ namespace clinical_system_N.models
                     json = r.ReadToEnd();
                 }
             }
+            return json;
             
         }
 
-        public Dictionary<string, object> deserializeToDictionary(string jo)
+        public Dictionary<string, object> deserializeToDictionary(JsonType jsonType, string patientID)
         {
+            string jo = LoadJson(jsonType, patientID);
             var values = JsonConvert.DeserializeObject<Dictionary<string, object>>(jo);
-            var values2 = new Dictionary<string, object>();
-            foreach (KeyValuePair<string, object> d in values)
-            {
-                // if (d.Value.GetType().FullName.Contains("Newtonsoft.Json.Linq.JObject"))
-                if (d.Value is JObject)
-                {
-#pragma warning disable CS8604 // Possible null reference argument.
-                    values2.Add(d.Key, deserializeToDictionary(d.Value.ToString()));
-#pragma warning restore CS8604 // Possible null reference argument.
-                }
-                else
-                {
-                    values2.Add(d.Key, d.Value);
-                }
-            }
-            return values2;
+ //           var values2 = new Dictionary<string, object>();
+//            foreach (KeyValuePair<string, object> d in values)
+//            {
+//                 //if (d.Value.GetType().FullName.Contains("Newtonsoft.Json.Linq.JObject"))
+//                if (d.Value is JObject)
+//                {
+//#pragma warning disable CS8604 // Possible null reference argument.
+//                    values2.Add(d.Key, deserializeToDictionary(d.Value.ToString()));
+//#pragma warning restore CS8604 // Possible null reference argument.
+//                }
+//                else
+//                {
+//                    values2.Add(d.Key, d.Value);
+//                }
+//            }
+            return values;
         }
 
         /*
