@@ -136,6 +136,9 @@
     </Compile>
     <Compile Include="models\AppendJoin.cs" />
     <Compile Include="models\Appointment.cs" />
+    <Compile Include="models\JsonManager.cs" />
+    <Compile Include="models\PatientProgram.cs" />
+    <Compile Include="models\PhysioTherapyPrograms.cs" />
     <Compile Include="models\Clinic.cs" />
     <Compile Include="models\DBController.cs" />
     <Compile Include="models\Doctor.cs" />

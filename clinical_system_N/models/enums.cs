@@ -23,3 +23,10 @@ enum MaritialStatus
     Widowed,
     Single
 }
+enum JsonType
+{
+    History,
+    MetaData,
+    Prescriptions,
+    Visits
+}
