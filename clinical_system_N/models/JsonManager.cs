@@ -14,21 +14,38 @@ namespace clinical_system_N.models
     {
         public string json;
         public List<object> itemList;
-        public JsonType enumType;
-        public void AddToJson<T,S>(string patientName, string category, Dictionary<T, S> numberNames)
-        {
-            enumType = JsonType.History;
-        }
-        public void LoadJson(JsonType EnumType, string patientID, string filePath)
+
+        public void LoadJson(JsonType enumType, string patientID)
         {
             if (enumType == JsonType.History)
             {
-
+                using (StreamReader r = new StreamReader(/*filePath + */ "\\" + patientID + "History.json"))
+                {
+                    json = r.ReadToEnd();
+                }
             }
-            using (StreamReader r = new StreamReader(filePath + "\\" + patientID + "data.json"))
+            if (enumType == JsonType.MetaData)
             {
-                json = r.ReadToEnd();
+                using (StreamReader r = new StreamReader(/*filePath + */ "\\" + patientID + "MetaData.json"))
+                {
+                    json = r.ReadToEnd();
+                }
             }
+            if (enumType == JsonType.Prescriptions)
+            {
+                using (StreamReader r = new StreamReader(/*filePath + */ "\\" + patientID + "Prescriptions.json"))
+                {
+                    json = r.ReadToEnd();
+                }
+            }
+            if (enumType == JsonType.Visits)
+            {
+                using (StreamReader r = new StreamReader(/*filePath + */ "\\" + patientID + "Visits.json"))
+                {
+                    json = r.ReadToEnd();
+                }
+            }
+            
         }
 
         public Dictionary<string, object> deserializeToDictionary(string jo)
@@ -51,5 +68,22 @@ namespace clinical_system_N.models
             }
             return values2;
         }
+
+        /*
+            Deserialize deserialize = new Deserialize();
+            deserialize.LoadJson(JsonType enumType, string patientID);
+
+#pragma warning disable CS8604 // Possible null reference argument.
+            Dictionary<string, object> values = deserialize.deserializeToDictionary(deserialize.json);
+#pragma warning restore CS8604 // Possible null reference argument.
+
+
+            //print dictionary
+            foreach (KeyValuePair<string, object> kvp in values)
+            {
+                //textBox3.Text += ("Key = {0}, Value = {1}", kvp.Key, kvp.Value);
+                Console.WriteLine("Key = {0}, Value = {1}", kvp.Key, kvp.Value);
+            }
+         */
     }
 }
