@@ -15,32 +15,34 @@ namespace clinical_system_N.models
         public string json;
         public List<object> itemList;
 
+
         public void LoadJson(JsonType enumType, string patientID)
         {
+            string DataPath = Path.Combine(Path.Combine(GlobalVariables.PathToPatients, patientID), "Data");
             if (enumType == JsonType.History)
             {
-                using (StreamReader r = new StreamReader(/*filePath + */ "\\" + patientID + "History.json"))
+                using (StreamReader r = new StreamReader(Path.Combine(DataPath, "History.json"))) 
                 {
                     json = r.ReadToEnd();
                 }
             }
             if (enumType == JsonType.MetaData)
             {
-                using (StreamReader r = new StreamReader(/*filePath + */ "\\" + patientID + "MetaData.json"))
+                using (StreamReader r = new StreamReader(Path.Combine(DataPath, "MetaData.json")))
                 {
                     json = r.ReadToEnd();
                 }
             }
             if (enumType == JsonType.Prescriptions)
             {
-                using (StreamReader r = new StreamReader(/*filePath + */ "\\" + patientID + "Prescriptions.json"))
+                using (StreamReader r = new StreamReader(Path.Combine(DataPath, "Prescriptions.json")))
                 {
                     json = r.ReadToEnd();
                 }
             }
             if (enumType == JsonType.Visits)
             {
-                using (StreamReader r = new StreamReader(/*filePath + */ "\\" + patientID + "Visits.json"))
+                using (StreamReader r = new StreamReader(Path.Combine(DataPath, "Visits.json")))
                 {
                     json = r.ReadToEnd();
                 }
