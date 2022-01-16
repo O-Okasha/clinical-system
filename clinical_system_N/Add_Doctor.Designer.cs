@@ -35,19 +35,13 @@ namespace clinical_system_N
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.phoneNumber = new System.Windows.Forms.TextBox();
+            this.email = new System.Windows.Forms.TextBox();
+            this.address = new System.Windows.Forms.TextBox();
+            this.lastName = new System.Windows.Forms.TextBox();
+            this.licsenceNumber = new System.Windows.Forms.TextBox();
+            this.specialization = new System.Windows.Forms.TextBox();
+            this.firstName = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -55,7 +49,6 @@ namespace clinical_system_N
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -66,6 +59,19 @@ namespace clinical_system_N
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.Calender = new System.Windows.Forms.Button();
+            this.label_First_Name = new System.Windows.Forms.Label();
+            this.label_Phone_Number = new System.Windows.Forms.Label();
+            this.label_Email = new System.Windows.Forms.Label();
+            this.label_Address = new System.Windows.Forms.Label();
+            this.label_Martrial_Status = new System.Windows.Forms.Label();
+            this.label_Date_Of_Birth = new System.Windows.Forms.Label();
+            this.label_Last_Name = new System.Windows.Forms.Label();
+            this.label_National_ID = new System.Windows.Forms.Label();
+            this.label_City = new System.Windows.Forms.Label();
+            this.label_Blood_Type = new System.Windows.Forms.Label();
+            this.label_Gender = new System.Windows.Forms.Label();
+            this.salary = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
@@ -75,10 +81,10 @@ namespace clinical_system_N
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(90)))), ((int)(((byte)(130)))));
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(158, -1);
+            this.panel1.Location = new System.Drawing.Point(157, -1);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1302, 67);
+            this.panel1.Size = new System.Drawing.Size(1301, 66);
             this.panel1.TabIndex = 11;
             this.panel1.UseWaitCursor = true;
             // 
@@ -98,7 +104,7 @@ namespace clinical_system_N
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 93);
+            this.pictureBox1.Size = new System.Drawing.Size(152, 94);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 73;
             this.pictureBox1.TabStop = false;
@@ -106,155 +112,88 @@ namespace clinical_system_N
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(425, 355);
+            this.dateTimePicker1.Location = new System.Drawing.Point(425, 354);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(250, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(249, 22);
             this.dateTimePicker1.TabIndex = 102;
             this.dateTimePicker1.UseWaitCursor = true;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label3.Location = new System.Drawing.Point(266, 355);
+            this.label3.Location = new System.Drawing.Point(259, 354);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 28);
             this.label3.TabIndex = 101;
             this.label3.Text = "Date of Birth";
             this.label3.UseWaitCursor = true;
             // 
-            // checkBox7
+            // phoneNumber
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(1141, 304);
-            this.checkBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(76, 21);
-            this.checkBox7.TabIndex = 100;
-            this.checkBox7.Text = "Female";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            this.checkBox7.UseWaitCursor = true;
+            this.phoneNumber.Location = new System.Drawing.Point(472, 166);
+            this.phoneNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.phoneNumber.Name = "phoneNumber";
+            this.phoneNumber.Size = new System.Drawing.Size(180, 22);
+            this.phoneNumber.TabIndex = 95;
+            this.phoneNumber.UseWaitCursor = true;
             // 
-            // checkBox1
+            // email
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(1027, 304);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(60, 21);
-            this.checkBox1.TabIndex = 99;
-            this.checkBox1.Text = "Male";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.UseWaitCursor = true;
+            this.email.Location = new System.Drawing.Point(472, 214);
+            this.email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(180, 22);
+            this.email.TabIndex = 94;
+            this.email.UseWaitCursor = true;
             // 
-            // checkBox4
+            // address
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(543, 310);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(69, 21);
-            this.checkBox4.TabIndex = 98;
-            this.checkBox4.Text = "Single";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.UseWaitCursor = true;
+            this.address.Location = new System.Drawing.Point(472, 262);
+            this.address.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.address.Name = "address";
+            this.address.Size = new System.Drawing.Size(180, 22);
+            this.address.TabIndex = 93;
+            this.address.UseWaitCursor = true;
             // 
-            // checkBox3
+            // lastName
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(633, 310);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(86, 21);
-            this.checkBox3.TabIndex = 97;
-            this.checkBox3.Text = "Divorced";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.UseWaitCursor = true;
+            this.lastName.Location = new System.Drawing.Point(1076, 117);
+            this.lastName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lastName.Name = "lastName";
+            this.lastName.Size = new System.Drawing.Size(180, 22);
+            this.lastName.TabIndex = 92;
+            this.lastName.UseWaitCursor = true;
             // 
-            // checkBox2
+            // licsenceNumber
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(425, 310);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(78, 21);
-            this.checkBox2.TabIndex = 96;
-            this.checkBox2.Text = "Married";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.UseWaitCursor = true;
+            this.licsenceNumber.Location = new System.Drawing.Point(1076, 169);
+            this.licsenceNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.licsenceNumber.Name = "licsenceNumber";
+            this.licsenceNumber.Size = new System.Drawing.Size(180, 22);
+            this.licsenceNumber.TabIndex = 91;
+            this.licsenceNumber.UseWaitCursor = true;
             // 
-            // textBox8
+            // specialization
             // 
-            this.textBox8.Location = new System.Drawing.Point(472, 166);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(180, 22);
-            this.textBox8.TabIndex = 95;
-            this.textBox8.UseWaitCursor = true;
+            this.specialization.Location = new System.Drawing.Point(1076, 218);
+            this.specialization.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.specialization.Name = "specialization";
+            this.specialization.Size = new System.Drawing.Size(180, 22);
+            this.specialization.TabIndex = 90;
+            this.specialization.UseWaitCursor = true;
             // 
-            // textBox7
+            // firstName
             // 
-            this.textBox7.Location = new System.Drawing.Point(472, 214);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(180, 22);
-            this.textBox7.TabIndex = 94;
-            this.textBox7.UseWaitCursor = true;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(472, 262);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(180, 22);
-            this.textBox6.TabIndex = 93;
-            this.textBox6.UseWaitCursor = true;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(1076, 117);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(180, 22);
-            this.textBox5.TabIndex = 92;
-            this.textBox5.UseWaitCursor = true;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(1076, 169);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(180, 22);
-            this.textBox4.TabIndex = 91;
-            this.textBox4.UseWaitCursor = true;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(1076, 262);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(180, 22);
-            this.textBox2.TabIndex = 90;
-            this.textBox2.UseWaitCursor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(1076, 214);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(180, 22);
-            this.textBox3.TabIndex = 89;
-            this.textBox3.UseWaitCursor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(472, 115);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 22);
-            this.textBox1.TabIndex = 88;
-            this.textBox1.UseWaitCursor = true;
+            this.firstName.Location = new System.Drawing.Point(472, 114);
+            this.firstName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.firstName.Name = "firstName";
+            this.firstName.Size = new System.Drawing.Size(180, 22);
+            this.firstName.TabIndex = 88;
+            this.firstName.UseWaitCursor = true;
+            this.firstName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label11
             // 
@@ -295,16 +234,17 @@ namespace clinical_system_N
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label8.Location = new System.Drawing.Point(259, 305);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(139, 28);
+            this.label8.Size = new System.Drawing.Size(93, 28);
             this.label8.TabIndex = 84;
-            this.label8.Text = "Martrial Status";
+            this.label8.Text = "Password";
             this.label8.UseWaitCursor = true;
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label7.Location = new System.Drawing.Point(858, 116);
+            this.label7.Location = new System.Drawing.Point(859, 116);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(103, 28);
             this.label7.TabIndex = 83;
@@ -315,44 +255,35 @@ namespace clinical_system_N
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label4.Location = new System.Drawing.Point(858, 262);
+            this.label4.Location = new System.Drawing.Point(859, 218);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 28);
+            this.label4.Size = new System.Drawing.Size(133, 28);
             this.label4.TabIndex = 81;
-            this.label4.Text = "Blood Type";
+            this.label4.Text = "Specialization";
             this.label4.UseWaitCursor = true;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label6.Location = new System.Drawing.Point(858, 166);
+            this.label6.Location = new System.Drawing.Point(861, 166);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 28);
+            this.label6.Size = new System.Drawing.Size(160, 28);
             this.label6.TabIndex = 82;
-            this.label6.Text = "National ID";
+            this.label6.Text = "Licsence Number";
             this.label6.UseWaitCursor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label5.Location = new System.Drawing.Point(858, 214);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 28);
-            this.label5.TabIndex = 80;
-            this.label5.Text = "City";
-            this.label5.UseWaitCursor = true;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label15.Location = new System.Drawing.Point(858, 306);
+            this.label15.Location = new System.Drawing.Point(859, 262);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(76, 28);
+            this.label15.Size = new System.Drawing.Size(65, 28);
             this.label15.TabIndex = 79;
-            this.label15.Text = "Gender";
+            this.label15.Text = "Salary";
             this.label15.UseWaitCursor = true;
             // 
             // label2
@@ -368,11 +299,11 @@ namespace clinical_system_N
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.button1.Location = new System.Drawing.Point(987, 421);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 24);
+            this.button1.Size = new System.Drawing.Size(103, 25);
             this.button1.TabIndex = 105;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
@@ -381,11 +312,11 @@ namespace clinical_system_N
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button3.Location = new System.Drawing.Point(1114, 421);
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
+            this.button3.Location = new System.Drawing.Point(1115, 421);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(103, 24);
+            this.button3.Size = new System.Drawing.Size(103, 25);
             this.button3.TabIndex = 104;
             this.button3.Text = "Cancel";
             this.button3.UseVisualStyleBackColor = false;
@@ -412,7 +343,7 @@ namespace clinical_system_N
             this.button4.Location = new System.Drawing.Point(19, 286);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(103, 24);
+            this.button4.Size = new System.Drawing.Size(103, 25);
             this.button4.TabIndex = 107;
             this.button4.Text = "Prefrences";
             this.button4.UseVisualStyleBackColor = false;
@@ -424,7 +355,7 @@ namespace clinical_system_N
             this.Admin.Location = new System.Drawing.Point(19, 181);
             this.Admin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Admin.Name = "Admin";
-            this.Admin.Size = new System.Drawing.Size(103, 24);
+            this.Admin.Size = new System.Drawing.Size(103, 25);
             this.Admin.TabIndex = 108;
             this.Admin.Text = "Admin";
             this.Admin.UseVisualStyleBackColor = false;
@@ -437,7 +368,7 @@ namespace clinical_system_N
             this.button6.Location = new System.Drawing.Point(19, 133);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(103, 24);
+            this.button6.Size = new System.Drawing.Size(103, 25);
             this.button6.TabIndex = 109;
             this.button6.Text = "Finance";
             this.button6.UseVisualStyleBackColor = false;
@@ -450,7 +381,7 @@ namespace clinical_system_N
             this.button7.Location = new System.Drawing.Point(19, 79);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(103, 24);
+            this.button7.Size = new System.Drawing.Size(103, 25);
             this.button7.TabIndex = 110;
             this.button7.Text = "Records";
             this.button7.UseVisualStyleBackColor = false;
@@ -460,15 +391,143 @@ namespace clinical_system_N
             // Calender
             // 
             this.Calender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.Calender.Location = new System.Drawing.Point(19, 29);
+            this.Calender.Location = new System.Drawing.Point(19, 30);
             this.Calender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Calender.Name = "Calender";
-            this.Calender.Size = new System.Drawing.Size(103, 24);
+            this.Calender.Size = new System.Drawing.Size(103, 25);
             this.Calender.TabIndex = 0;
             this.Calender.Text = "Calender";
             this.Calender.UseVisualStyleBackColor = false;
             this.Calender.UseWaitCursor = true;
             this.Calender.Click += new System.EventHandler(this.Calender_Click);
+            // 
+            // label_First_Name
+            // 
+            this.label_First_Name.AutoSize = true;
+            this.label_First_Name.Location = new System.Drawing.Point(503, 145);
+            this.label_First_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_First_Name.Name = "label_First_Name";
+            this.label_First_Name.Size = new System.Drawing.Size(0, 16);
+            this.label_First_Name.TabIndex = 107;
+            this.label_First_Name.UseWaitCursor = true;
+            // 
+            // label_Phone_Number
+            // 
+            this.label_Phone_Number.AutoSize = true;
+            this.label_Phone_Number.Location = new System.Drawing.Point(503, 196);
+            this.label_Phone_Number.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Phone_Number.Name = "label_Phone_Number";
+            this.label_Phone_Number.Size = new System.Drawing.Size(0, 16);
+            this.label_Phone_Number.TabIndex = 108;
+            this.label_Phone_Number.UseWaitCursor = true;
+            // 
+            // label_Email
+            // 
+            this.label_Email.AutoSize = true;
+            this.label_Email.Location = new System.Drawing.Point(503, 244);
+            this.label_Email.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Email.Name = "label_Email";
+            this.label_Email.Size = new System.Drawing.Size(0, 16);
+            this.label_Email.TabIndex = 109;
+            this.label_Email.UseWaitCursor = true;
+            // 
+            // label_Address
+            // 
+            this.label_Address.AutoSize = true;
+            this.label_Address.Location = new System.Drawing.Point(503, 292);
+            this.label_Address.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Address.Name = "label_Address";
+            this.label_Address.Size = new System.Drawing.Size(0, 16);
+            this.label_Address.TabIndex = 110;
+            this.label_Address.UseWaitCursor = true;
+            // 
+            // label_Martrial_Status
+            // 
+            this.label_Martrial_Status.AutoSize = true;
+            this.label_Martrial_Status.Location = new System.Drawing.Point(503, 334);
+            this.label_Martrial_Status.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Martrial_Status.Name = "label_Martrial_Status";
+            this.label_Martrial_Status.Size = new System.Drawing.Size(0, 16);
+            this.label_Martrial_Status.TabIndex = 111;
+            this.label_Martrial_Status.UseWaitCursor = true;
+            // 
+            // label_Date_Of_Birth
+            // 
+            this.label_Date_Of_Birth.AutoSize = true;
+            this.label_Date_Of_Birth.Location = new System.Drawing.Point(503, 393);
+            this.label_Date_Of_Birth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Date_Of_Birth.Name = "label_Date_Of_Birth";
+            this.label_Date_Of_Birth.Size = new System.Drawing.Size(0, 16);
+            this.label_Date_Of_Birth.TabIndex = 112;
+            this.label_Date_Of_Birth.UseWaitCursor = true;
+            // 
+            // label_Last_Name
+            // 
+            this.label_Last_Name.AutoSize = true;
+            this.label_Last_Name.Location = new System.Drawing.Point(1111, 148);
+            this.label_Last_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Last_Name.Name = "label_Last_Name";
+            this.label_Last_Name.Size = new System.Drawing.Size(0, 16);
+            this.label_Last_Name.TabIndex = 113;
+            this.label_Last_Name.UseWaitCursor = true;
+            // 
+            // label_National_ID
+            // 
+            this.label_National_ID.AutoSize = true;
+            this.label_National_ID.Location = new System.Drawing.Point(1111, 196);
+            this.label_National_ID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_National_ID.Name = "label_National_ID";
+            this.label_National_ID.Size = new System.Drawing.Size(0, 16);
+            this.label_National_ID.TabIndex = 114;
+            this.label_National_ID.UseWaitCursor = true;
+            // 
+            // label_City
+            // 
+            this.label_City.AutoSize = true;
+            this.label_City.Location = new System.Drawing.Point(1111, 242);
+            this.label_City.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_City.Name = "label_City";
+            this.label_City.Size = new System.Drawing.Size(0, 16);
+            this.label_City.TabIndex = 115;
+            this.label_City.UseWaitCursor = true;
+            // 
+            // label_Blood_Type
+            // 
+            this.label_Blood_Type.AutoSize = true;
+            this.label_Blood_Type.Location = new System.Drawing.Point(1111, 292);
+            this.label_Blood_Type.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Blood_Type.Name = "label_Blood_Type";
+            this.label_Blood_Type.Size = new System.Drawing.Size(0, 16);
+            this.label_Blood_Type.TabIndex = 116;
+            this.label_Blood_Type.UseWaitCursor = true;
+            // 
+            // label_Gender
+            // 
+            this.label_Gender.AutoSize = true;
+            this.label_Gender.Location = new System.Drawing.Point(1111, 336);
+            this.label_Gender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Gender.Name = "label_Gender";
+            this.label_Gender.Size = new System.Drawing.Size(0, 16);
+            this.label_Gender.TabIndex = 117;
+            this.label_Gender.UseWaitCursor = true;
+            // 
+            // salary
+            // 
+            this.salary.Location = new System.Drawing.Point(1076, 268);
+            this.salary.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.salary.Name = "salary";
+            this.salary.Size = new System.Drawing.Size(180, 22);
+            this.salary.TabIndex = 118;
+            this.salary.UseWaitCursor = true;
+            // 
+            // password
+            // 
+            this.password.Location = new System.Drawing.Point(472, 312);
+            this.password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(180, 22);
+            this.password.TabIndex = 119;
+            this.password.UseWaitCursor = true;
             // 
             // Add_Doctor
             // 
@@ -476,24 +535,31 @@ namespace clinical_system_N
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1440, 651);
+            this.Controls.Add(this.password);
+            this.Controls.Add(this.salary);
+            this.Controls.Add(this.label_Gender);
+            this.Controls.Add(this.label_Blood_Type);
+            this.Controls.Add(this.label_City);
+            this.Controls.Add(this.label_National_ID);
+            this.Controls.Add(this.label_Last_Name);
+            this.Controls.Add(this.label_Date_Of_Birth);
+            this.Controls.Add(this.label_Martrial_Status);
+            this.Controls.Add(this.label_Address);
+            this.Controls.Add(this.label_Email);
+            this.Controls.Add(this.label_Phone_Number);
+            this.Controls.Add(this.label_First_Name);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.checkBox7);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.phoneNumber);
+            this.Controls.Add(this.email);
+            this.Controls.Add(this.address);
+            this.Controls.Add(this.lastName);
+            this.Controls.Add(this.licsenceNumber);
+            this.Controls.Add(this.specialization);
+            this.Controls.Add(this.firstName);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -501,7 +567,6 @@ namespace clinical_system_N
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
@@ -530,19 +595,13 @@ namespace clinical_system_N
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox phoneNumber;
+        private System.Windows.Forms.TextBox email;
+        private System.Windows.Forms.TextBox address;
+        private System.Windows.Forms.TextBox lastName;
+        private System.Windows.Forms.TextBox licsenceNumber;
+        private System.Windows.Forms.TextBox specialization;
+        private System.Windows.Forms.TextBox firstName;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
@@ -550,7 +609,6 @@ namespace clinical_system_N
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
@@ -561,6 +619,19 @@ namespace clinical_system_N
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button Calender;
+        private System.Windows.Forms.Label label_First_Name;
+        private System.Windows.Forms.Label label_Phone_Number;
+        private System.Windows.Forms.Label label_Email;
+        private System.Windows.Forms.Label label_Address;
+        private System.Windows.Forms.Label label_Martrial_Status;
+        private System.Windows.Forms.Label label_Date_Of_Birth;
+        private System.Windows.Forms.Label label_Last_Name;
+        private System.Windows.Forms.Label label_National_ID;
+        private System.Windows.Forms.Label label_City;
+        private System.Windows.Forms.Label label_Blood_Type;
+        private System.Windows.Forms.Label label_Gender;
+        private System.Windows.Forms.TextBox salary;
+        private System.Windows.Forms.TextBox password;
     }
 }
 

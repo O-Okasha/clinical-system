@@ -25,11 +25,15 @@ namespace clinical_system_N
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label_state = new System.Windows.Forms.Label();
+            this.label_Version_Number = new System.Windows.Forms.Label();
+            this.label_Company_Name = new System.Windows.Forms.Label();
+            this.label_Device_Name = new System.Windows.Forms.Label();
+            this.companyName = new System.Windows.Forms.TextBox();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.version = new System.Windows.Forms.TextBox();
+            this.deviceName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -58,7 +62,8 @@ namespace clinical_system_N
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(90)))), ((int)(((byte)(130)))));
             this.panel2.Controls.Add(this.label1);
             this.panel2.Font = new System.Drawing.Font("Ebrima", 8.25F);
-            this.panel2.Location = new System.Drawing.Point(150, 0);
+            this.panel2.Location = new System.Drawing.Point(149, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1289, 96);
             this.panel2.TabIndex = 1;
@@ -76,38 +81,81 @@ namespace clinical_system_N
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.textBox5);
+            this.panel3.Controls.Add(this.label_state);
+            this.panel3.Controls.Add(this.label_Version_Number);
+            this.panel3.Controls.Add(this.label_Company_Name);
+            this.panel3.Controls.Add(this.label_Device_Name);
+            this.panel3.Controls.Add(this.companyName);
             this.panel3.Controls.Add(this.button12);
             this.panel3.Controls.Add(this.button11);
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.version);
+            this.panel3.Controls.Add(this.deviceName);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(263, 129);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(916, 563);
+            this.panel3.Size = new System.Drawing.Size(916, 562);
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // textBox5
+            // label_state
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox5.Location = new System.Drawing.Point(433, 190);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(316, 22);
-            this.textBox5.TabIndex = 11;
-            this.textBox5.Text = "Company Name";
+            this.label_state.AutoSize = true;
+            this.label_state.Location = new System.Drawing.Point(549, 390);
+            this.label_state.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_state.Name = "label_state";
+            this.label_state.Size = new System.Drawing.Size(0, 16);
+            this.label_state.TabIndex = 15;
+            // 
+            // label_Version_Number
+            // 
+            this.label_Version_Number.AutoSize = true;
+            this.label_Version_Number.Location = new System.Drawing.Point(469, 267);
+            this.label_Version_Number.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Version_Number.Name = "label_Version_Number";
+            this.label_Version_Number.Size = new System.Drawing.Size(0, 16);
+            this.label_Version_Number.TabIndex = 14;
+            // 
+            // label_Company_Name
+            // 
+            this.label_Company_Name.AutoSize = true;
+            this.label_Company_Name.Location = new System.Drawing.Point(469, 218);
+            this.label_Company_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Company_Name.Name = "label_Company_Name";
+            this.label_Company_Name.Size = new System.Drawing.Size(0, 16);
+            this.label_Company_Name.TabIndex = 13;
+            // 
+            // label_Device_Name
+            // 
+            this.label_Device_Name.AutoSize = true;
+            this.label_Device_Name.Location = new System.Drawing.Point(469, 167);
+            this.label_Device_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Device_Name.Name = "label_Device_Name";
+            this.label_Device_Name.Size = new System.Drawing.Size(0, 16);
+            this.label_Device_Name.TabIndex = 12;
+            // 
+            // companyName
+            // 
+            this.companyName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.companyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.companyName.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.companyName.Location = new System.Drawing.Point(433, 190);
+            this.companyName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.companyName.Name = "companyName";
+            this.companyName.Size = new System.Drawing.Size(317, 22);
+            this.companyName.TabIndex = 11;
+            this.companyName.Text = "Company Name";
             // 
             // button12
             // 
             this.button12.Location = new System.Drawing.Point(433, 318);
+            this.button12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(90, 34);
+            this.button12.Size = new System.Drawing.Size(91, 34);
             this.button12.TabIndex = 10;
             this.button12.Text = "Edit";
             this.button12.UseVisualStyleBackColor = true;
@@ -115,34 +163,39 @@ namespace clinical_system_N
             // button11
             // 
             this.button11.Location = new System.Drawing.Point(600, 320);
+            this.button11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(94, 34);
+            this.button11.Size = new System.Drawing.Size(93, 34);
             this.button11.TabIndex = 9;
             this.button11.Text = "Confirm";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
-            // textBox3
+            // version
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox3.Location = new System.Drawing.Point(433, 239);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(316, 22);
-            this.textBox3.TabIndex = 7;
-            this.textBox3.Text = "Version NO";
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.version.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.version.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.version.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.version.Location = new System.Drawing.Point(433, 239);
+            this.version.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.version.Name = "version";
+            this.version.Size = new System.Drawing.Size(317, 22);
+            this.version.TabIndex = 7;
+            this.version.Text = "Version NO";
+            this.version.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // textBox1
+            // deviceName
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox1.Location = new System.Drawing.Point(433, 137);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(316, 22);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "Device Name";
+            this.deviceName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.deviceName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deviceName.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.deviceName.Location = new System.Drawing.Point(433, 137);
+            this.deviceName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.deviceName.Name = "deviceName";
+            this.deviceName.Size = new System.Drawing.Size(317, 22);
+            this.deviceName.TabIndex = 5;
+            this.deviceName.Text = "Device Name";
+            this.deviceName.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // label7
             // 
@@ -158,7 +211,7 @@ namespace clinical_system_N
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(294, 234);
+            this.label6.Location = new System.Drawing.Point(293, 234);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(119, 25);
             this.label6.TabIndex = 3;
@@ -191,7 +244,7 @@ namespace clinical_system_N
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(334, 26);
+            this.label3.Location = new System.Drawing.Point(333, 26);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(234, 46);
             this.label3.TabIndex = 0;
@@ -200,6 +253,7 @@ namespace clinical_system_N
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(152, 96);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -213,8 +267,9 @@ namespace clinical_system_N
             this.panel4.Controls.Add(this.button14);
             this.panel4.Controls.Add(this.button13);
             this.panel4.Location = new System.Drawing.Point(1287, 92);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(152, 691);
+            this.panel4.Size = new System.Drawing.Size(152, 690);
             this.panel4.TabIndex = 4;
             // 
             // button15
@@ -222,6 +277,7 @@ namespace clinical_system_N
             this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(255)))));
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.Location = new System.Drawing.Point(29, 135);
+            this.button15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(103, 30);
             this.button15.TabIndex = 13;
@@ -234,6 +290,7 @@ namespace clinical_system_N
             this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.Location = new System.Drawing.Point(29, 25);
+            this.button14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(103, 30);
             this.button14.TabIndex = 12;
@@ -246,6 +303,7 @@ namespace clinical_system_N
             this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.Location = new System.Drawing.Point(29, 79);
+            this.button13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(103, 30);
             this.button13.TabIndex = 11;
@@ -263,14 +321,16 @@ namespace clinical_system_N
             this.panel43.Controls.Add(this.button2);
             this.panel43.Controls.Add(this.button1);
             this.panel43.Location = new System.Drawing.Point(0, 92);
+            this.panel43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel43.Name = "panel43";
-            this.panel43.Size = new System.Drawing.Size(152, 691);
+            this.panel43.Size = new System.Drawing.Size(151, 691);
             this.panel43.TabIndex = 10;
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.button5.Location = new System.Drawing.Point(19, 358);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(103, 30);
             this.button5.TabIndex = 5;
@@ -281,6 +341,7 @@ namespace clinical_system_N
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.button3.Location = new System.Drawing.Point(19, 226);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(103, 30);
             this.button3.TabIndex = 3;
@@ -292,6 +353,7 @@ namespace clinical_system_N
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.button4.Location = new System.Drawing.Point(19, 166);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(103, 30);
             this.button4.TabIndex = 2;
@@ -302,7 +364,8 @@ namespace clinical_system_N
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button2.Location = new System.Drawing.Point(19, 99);
+            this.button2.Location = new System.Drawing.Point(19, 98);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 30);
             this.button2.TabIndex = 1;
@@ -314,6 +377,7 @@ namespace clinical_system_N
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.button1.Location = new System.Drawing.Point(19, 36);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 30);
             this.button1.TabIndex = 0;
@@ -334,7 +398,9 @@ namespace clinical_system_N
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Add_Device";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add_Patient";
             this.Load += new System.EventHandler(this.AdminSettings_Load);
             this.panel2.ResumeLayout(false);
@@ -356,13 +422,13 @@ namespace clinical_system_N
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox version;
+        private System.Windows.Forms.TextBox deviceName;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox companyName;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button14;
@@ -373,5 +439,9 @@ namespace clinical_system_N
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label_Version_Number;
+        private System.Windows.Forms.Label label_Company_Name;
+        private System.Windows.Forms.Label label_Device_Name;
+        private System.Windows.Forms.Label label_state;
     }
 }

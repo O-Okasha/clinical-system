@@ -1,10 +1,13 @@
-﻿using System;
+﻿using clinical_system_N.models;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,6 +18,52 @@ namespace clinical_system_N
         public Add_Device()
         {
             InitializeComponent();
+        }
+
+        private bool isValid_name(string inp)
+        {
+            Regex check = new Regex(@"^([A-Z][a-z-A-z]+)$");
+            bool valid = check.IsMatch(inp);
+            return valid;
+
+        }
+
+        private bool Validation()
+        {
+            // Device Name Validation
+            if (deviceName.Text == "" || !isValid_name(deviceName.Text))
+            {
+                label_Device_Name.ForeColor = Color.Red;
+                label_Device_Name.Text = "invalid input";
+                return false;
+            }
+            else
+            {
+                label_Device_Name.Text = "";
+            }
+            //Company name Validation
+            if (companyName.Text == "" || !isValid_name(companyName.Text))
+            {
+                label_Company_Name.ForeColor = Color.Red;
+                label_Company_Name.Text = "invalid input";
+                return false;
+            }
+            else
+            {
+                label_Company_Name.Text = "";
+            }
+            //Version Number Validation
+            if (version.Text == "")
+            {
+                label_Version_Number.ForeColor = Color.Red;
+                label_Version_Number.Text = "invalid input";
+                return false;
+            }
+            else
+            {
+                label_Version_Number.Text = "";
+            }
+            return true;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -123,6 +172,38 @@ namespace clinical_system_N
         private void button15_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            bool validation = Validation();
+            //if all inputs are true proceed to database
+            if (validation)
+            {
+                var x = Guid.NewGuid().ToString();  
+                DBController db = new DBController();
+                try
+                {
+                    string q = string.Format("insert into MACHINES values('never', '{0}', '{1}', '{2}', {3} )",
+                        deviceName.Text, companyName.Text, version.Text, x);
+                    if (db.OpenConnection())
+                    {
+                        MySqlCommand cmd = new MySqlCommand(q, db.connection);
+                        cmd.ExecuteNonQuery();
+                        db.CloseConnection();
+                    }
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                label_state.Text = "Device Added Successfully";
+            }
         }
     }
 }

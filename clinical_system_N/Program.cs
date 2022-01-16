@@ -1,4 +1,5 @@
-﻿using System;
+﻿using clinical_system_N.models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ namespace clinical_system_N
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Clinic clinic;
             Application.Run(new login_page());
         }
     }

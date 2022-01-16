@@ -834,6 +834,7 @@ namespace clinical_system_N
             this.Controls.Add(this.panel43);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OrthopedicUnit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrthopedicUnit";
             this.Load += new System.EventHandler(this.OrthopedicUnit_Load);
             this.panel43.ResumeLayout(false);
