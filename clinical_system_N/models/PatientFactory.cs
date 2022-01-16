@@ -87,6 +87,7 @@ namespace clinical_system_N.models
         public Patient CreatePatient(string patientname, string dob, string nationalID, string gender, string email, string phone, string address, string MaritialStatus, string proffession)
         {
             string patientID = Guid.NewGuid().ToString();
+            DirectoryManager manager = new DirectoryManager(patientID);
             Gender gender1;
             MaritialStatus maritialStatus;
             if (MaritialStatus == "Married")
@@ -128,6 +129,7 @@ namespace clinical_system_N.models
                     MySqlCommand cmd = new MySqlCommand(q, db.connection);
                     cmd.ExecuteNonQuery();
                     db.CloseConnection();
+                    manager.ReadyPatient();
 
                 }
             }
