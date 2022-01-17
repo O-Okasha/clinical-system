@@ -17,7 +17,6 @@ namespace clinical_system_N
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Clinic clinic;
             Application.Run(new login_page());
         }
     }

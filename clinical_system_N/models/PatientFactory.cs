@@ -78,7 +78,7 @@ namespace clinical_system_N.models
                 Patient patient = new Patient(information);
                 return patient;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return null;
             }
