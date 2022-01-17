@@ -73,6 +73,32 @@ namespace clinical_system_N.models
             return values;
         }
 
+        private void AddJson(JsonType enumType, string patientID, List<object> toJson)
+        {
+            string DataPath = Path.Combine(Path.Combine(GlobalVariables.PathToPatients, patientID), "Data");
+            if (enumType == JsonType.History)
+            {     
+                string output = Newtonsoft.Json.JsonConvert.SerializeObject(toJson);
+                File.WriteAllText(Path.Combine(DataPath, "History.json"), output);
+            }
+            if (enumType == JsonType.MetaData)
+            {
+                string output = Newtonsoft.Json.JsonConvert.SerializeObject(toJson);
+                File.WriteAllText(Path.Combine(DataPath, "MetaData.json"), output);
+            }
+            if (enumType == JsonType.Prescriptions)
+            {
+                string output = Newtonsoft.Json.JsonConvert.SerializeObject(toJson);
+                File.WriteAllText(Path.Combine(DataPath, "Prescriptions.json"), output);
+            }
+            if (enumType == JsonType.Visits)
+            {
+                string output = Newtonsoft.Json.JsonConvert.SerializeObject(toJson);
+                File.WriteAllText(Path.Combine(DataPath, "Visits.json"), output);
+            }
+
+        }
+
         /*
             Deserialize deserialize = new Deserialize();
             deserialize.LoadJson(JsonType enumType, string patientID);
