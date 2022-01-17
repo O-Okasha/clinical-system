@@ -140,6 +140,7 @@
     <Compile Include="models\JsonManager.cs" />
     <Compile Include="models\PatientMetaData.cs" />
     <Compile Include="models\PatientProgram.cs" />
+    <Compile Include="models\PerscribedService.cs" />
     <Compile Include="models\PhysioTherapyPrograms.cs" />
     <Compile Include="models\Clinic.cs" />
     <Compile Include="models\DBController.cs" />
