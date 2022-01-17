@@ -140,6 +140,7 @@
     <Compile Include="models\JsonManager.cs" />
     <Compile Include="models\PatientMetaData.cs" />
     <Compile Include="models\PatientProgram.cs" />
+    <Compile Include="models\PerscribedService.cs" />
     <Compile Include="models\PhysioTherapyPrograms.cs" />
     <Compile Include="models\Clinic.cs" />
     <Compile Include="models\DBController.cs" />
@@ -155,6 +156,7 @@
     <Compile Include="models\Perscription.cs" />
     <Compile Include="models\Person.cs" />
     <Compile Include="models\Service.cs" />
+    <Compile Include="models\Visit.cs" />
     <Compile Include="OrthopedicUnit.cs">
       <SubType>Form</SubType>
     </Compile>
