@@ -138,10 +138,10 @@
     <Compile Include="models\Appointment.cs" />
     <Compile Include="models\Device.cs" />
     <Compile Include="models\JsonManager.cs" />
+    <Compile Include="models\PatientMetaData.cs" />
     <Compile Include="models\PatientProgram.cs" />
     <Compile Include="models\PhysioTherapyPrograms.cs" />
     <Compile Include="models\Clinic.cs" />
-    <Compile Include="models\CodeFile1.cs" />
     <Compile Include="models\DBController.cs" />
     <Compile Include="models\DirectoryManager.cs" />
     <Compile Include="models\Doctor.cs" />
@@ -246,8 +246,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="PatientData\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

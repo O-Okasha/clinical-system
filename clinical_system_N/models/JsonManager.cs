@@ -15,58 +15,62 @@ namespace clinical_system_N.models
         public string json;
         public List<object> itemList;
 
-        public void LoadJson(JsonType enumType, string patientID)
+
+        private string LoadJson(JsonType enumType, string patientID)
         {
+            string DataPath = Path.Combine(Path.Combine(GlobalVariables.PathToPatients, patientID), "Data");
             if (enumType == JsonType.History)
             {
-                using (StreamReader r = new StreamReader(/*filePath + */ "\\" + patientID + "History.json"))
+                using (StreamReader r = new StreamReader(Path.Combine(DataPath, "History.json"))) 
                 {
                     json = r.ReadToEnd();
                 }
             }
             if (enumType == JsonType.MetaData)
             {
-                using (StreamReader r = new StreamReader(/*filePath + */ "\\" + patientID + "MetaData.json"))
+                using (StreamReader r = new StreamReader(Path.Combine(DataPath, "MetaData.json")))
                 {
                     json = r.ReadToEnd();
                 }
             }
             if (enumType == JsonType.Prescriptions)
             {
-                using (StreamReader r = new StreamReader(/*filePath + */ "\\" + patientID + "Prescriptions.json"))
+                using (StreamReader r = new StreamReader(Path.Combine(DataPath, "Prescriptions.json")))
                 {
                     json = r.ReadToEnd();
                 }
             }
             if (enumType == JsonType.Visits)
             {
-                using (StreamReader r = new StreamReader(/*filePath + */ "\\" + patientID + "Visits.json"))
+                using (StreamReader r = new StreamReader(Path.Combine(DataPath, "Visits.json")))
                 {
                     json = r.ReadToEnd();
                 }
             }
+            return json;
             
         }
 
-        public Dictionary<string, object> deserializeToDictionary(string jo)
+        public Dictionary<string, JToken> deserializeToDictionary(JsonType jsonType, string patientID)
         {
-            var values = JsonConvert.DeserializeObject<Dictionary<string, object>>(jo);
-            var values2 = new Dictionary<string, object>();
-            foreach (KeyValuePair<string, object> d in values)
-            {
-                // if (d.Value.GetType().FullName.Contains("Newtonsoft.Json.Linq.JObject"))
-                if (d.Value is JObject)
-                {
-#pragma warning disable CS8604 // Possible null reference argument.
-                    values2.Add(d.Key, deserializeToDictionary(d.Value.ToString()));
-#pragma warning restore CS8604 // Possible null reference argument.
-                }
-                else
-                {
-                    values2.Add(d.Key, d.Value);
-                }
-            }
-            return values2;
+            string jo = LoadJson(jsonType, patientID);
+            var values = JsonConvert.DeserializeObject<Dictionary<string, JToken>>(jo);
+ //           var values2 = new Dictionary<string, object>();
+//            foreach (KeyValuePair<string, object> d in values)
+//            {
+//                 //if (d.Value.GetType().FullName.Contains("Newtonsoft.Json.Linq.JObject"))
+//                if (d.Value is JObject)
+//                {
+//#pragma warning disable CS8604 // Possible null reference argument.
+//                    values2.Add(d.Key, deserializeToDictionary(d.Value.ToString()));
+//#pragma warning restore CS8604 // Possible null reference argument.
+//                }
+//                else
+//                {
+//                    values2.Add(d.Key, d.Value);
+//                }
+//            }
+            return values;
         }
 
         /*
