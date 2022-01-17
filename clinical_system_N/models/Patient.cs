@@ -27,7 +27,7 @@ namespace clinical_system_N.models
                 visits = GetVisits();
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }
@@ -79,12 +79,13 @@ namespace clinical_system_N.models
             {
                 return false;
             }
+
             try
             {
                 perscriptions.Add(perscription);
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }
@@ -95,14 +96,31 @@ namespace clinical_system_N.models
             {
                 return false;
             }
+
             try
             {
                 visits.Add(visit);
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
+            }
+        }
+
+        public bool Save()
+        {
+            if (visits == null || perscriptions == null)
+            {
+                return false;
+            }
+            else
+            {
+                JsonManager jsonManager = new JsonManager();
+                jsonManager.AddJson(JsonType.Prescriptions, info.PatientId, perscriptions);
+                jsonManager.AddJson(JsonType.Prescriptions, info.PatientId, visits);
+                return true;
+
             }
         }
 

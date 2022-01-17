@@ -73,7 +73,7 @@ namespace clinical_system_N.models
             return values;
         }
 
-        private void AddJson<T>(JsonType enumType, string patientID, List<T> toJson)
+        private void AddJson(JsonType enumType, string patientID, List<object> toJson)
         {
             string DataPath = Path.Combine(Path.Combine(GlobalVariables.PathToPatients, patientID), "Data");
             if (enumType == JsonType.History)

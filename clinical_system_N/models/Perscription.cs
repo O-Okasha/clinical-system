@@ -13,6 +13,8 @@ namespace clinical_system_N.models
         public string Id { get; set; }
         public string patientName { get; set; }
         public string DoctorName { get; set; }
+        public string patientID { get; set; }
+        public string DoctorID { get; set; }
         public string VisitId { get; set; }
         List<PerscribedMedicine> Medication { get; set; }
         public string SDate { get; set; }
@@ -22,8 +24,10 @@ namespace clinical_system_N.models
             Medication = new List<PerscribedMedicine>();
             Id = Guid.NewGuid().ToString();
             SDate = DateTime.Now.ToString();
-            Patient = patient;
-            Doctor = doctor;
+            patientName = patient.info.PatientName;
+            DoctorName = doctor.Name;
+            patientID = patient.info.PatientId;
+            DoctorID = doctor.Id;
 
         }
         public void AddMedicine(PerscribedMedicine med) 
@@ -36,7 +40,7 @@ namespace clinical_system_N.models
         {
             var dic = new Dictionary<string, object>();
             var x = new Dictionary<string, object>();
-            x.Add("doctor", Doctor.Name);
+            x.Add("doctor", DoctorName);
             x.Add("date", SDate);
             var z = new Dictionary<string, object>();
             z.Add("meta data", x);
