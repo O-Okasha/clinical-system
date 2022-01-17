@@ -15,11 +15,11 @@ namespace clinical_system_N
 {
     public partial class AdminSettings : Form
     {
-        
+
         public AdminSettings()
         {
             InitializeComponent();
-            
+
         }
 
         private bool isValid_name(string inp)
@@ -178,7 +178,7 @@ namespace clinical_system_N
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            patient_record C40 = new patient_record();
+            Records C40 = new Records();
             C40.Show();
 
         }
@@ -217,12 +217,13 @@ namespace clinical_system_N
                         firstName.Text, lastName.Text, Salary.Text, password.Text, email.Text, phoneNumber.Text);
                     List<string> list = new List<string>();
                     DBController db = new DBController();
-                    if (db.OpenConnection()) {
+                    if (db.OpenConnection())
+                    {
                         MySqlCommand cmd = new MySqlCommand(q, db.connection);
                         cmd.ExecuteNonQuery();
                         db.CloseConnection();
                     }
-                    
+
                     label_State.Text = "Employee is Added Successfully";
                 }
                 catch (Exception ex)

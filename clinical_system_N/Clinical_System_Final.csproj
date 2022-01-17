@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{47CE58FA-2789-45AF-982E-109BFAD48F51}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>clinical_system_N</RootNamespace>
+    <AssemblyName>clinical_system_N</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.14.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.14.0\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.27\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.27\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.27\lib\net452\ZstdNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Active.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Active.Designer.cs">
+      <DependentUpon>Active.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Patient.Designer.cs">
+      <DependentUpon>Add_Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Appointment.Designer.cs">
+      <DependentUpon>Add_Appointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Device.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Device.Designer.cs">
+      <DependentUpon>Add_Device.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Doctor.Designer.cs">
+      <DependentUpon>Add_Doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Setting.Designer.cs">
+      <DependentUpon>Admin_Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App.Designer.cs">
+      <DependentUpon>App.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assesment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assesment.Designer.cs">
+      <DependentUpon>Assesment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnosisdoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnosisdoc.Designer.cs">
+      <DependentUpon>Diagnosisdoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor_Prescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor_Prescription.Designer.cs">
+      <DependentUpon>Doctor_Prescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance.Designer.cs">
+      <DependentUpon>Finance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General.Designer.cs">
+      <DependentUpon>General.cs</DependentUpon>
+    </Compile>
+    <Compile Include="History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Investigation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigation.Designer.cs">
+      <DependentUpon>Investigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_page.Designer.cs">
+      <DependentUpon>Login_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="models\AppendJoin.cs" />
+    <Compile Include="models\Appointment.cs" />
+    <Compile Include="models\Device.cs" />
+    <Compile Include="models\JsonManager.cs" />
+    <Compile Include="models\PatientMetaData.cs" />
+    <Compile Include="models\PatientProgram.cs" />
+    <Compile Include="models\PerscribedService.cs" />
+    <Compile Include="models\PhysioTherapyPrograms.cs" />
+    <Compile Include="models\Clinic.cs" />
+    <Compile Include="models\DBController.cs" />
+    <Compile Include="models\DirectoryManager.cs" />
+    <Compile Include="models\Doctor.cs" />
+    <Compile Include="models\enums.cs" />
+    <Compile Include="models\GlobalVariables.cs" />
+    <Compile Include="models\Medication.cs" />
+    <Compile Include="models\Patient.cs" />
+    <Compile Include="models\PatientFactory.cs" />
+    <Compile Include="models\PatientInformation.cs" />
+    <Compile Include="models\PerscribedMedicine.cs" />
+    <Compile Include="models\Perscription.cs" />
+    <Compile Include="models\Person.cs" />
+    <Compile Include="models\Service.cs" />
+    <Compile Include="models\Visit.cs" />
+    <Compile Include="OrthopedicUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrthopedicUnit.Designer.cs">
+      <DependentUpon>OrthopedicUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrthopedicUnit_Calender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrthopedicUnit_Calender.Designer.cs">
+      <DependentUpon>OrthopedicUnit_Calender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_Record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_Record.Designer.cs">
+      <DependentUpon>Patient_Record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Physio Devices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Physio Devices.Designer.cs">
+      <DependentUpon>Physio Devices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Physio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Physio.Designer.cs">
+      <DependentUpon>Physio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Physiotherape_Calender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Physiotherape_Calender.Designer.cs">
+      <DependentUpon>Physiotherape_Calender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Physiotherapy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Physiotherapy.Designer.cs">
+      <DependentUpon>Physiotherapy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prescription.Designer.cs">
+      <DependentUpon>prescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Records.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Records.Designer.cs">
+      <DependentUpon>Records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Services.Designer.cs">
+      <DependentUpon>Services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Devices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Devices.Designer.cs">
+      <DependentUpon>View_Devices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Program.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Program.Designer.cs">
+      <DependentUpon>View_Program.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Ray.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Ray.Designer.cs">
+      <DependentUpon>X_Ray.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Active.resx">
+      <DependentUpon>Active.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Appointment.resx">
+      <DependentUpon>Add_Appointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Patient.resx">
+      <DependentUpon>Add_Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Device.resx">
+      <DependentUpon>Add_Device.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Doctor.resx">
+      <DependentUpon>Add_Doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Setting.resx">
+      <DependentUpon>Admin_Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App.resx">
+      <DependentUpon>App.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assesment.resx">
+      <DependentUpon>Assesment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnosisdoc.resx">
+      <DependentUpon>Diagnosisdoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor_Prescription.resx">
+      <DependentUpon>Doctor_Prescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance.resx">
+      <DependentUpon>Finance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General.resx">
+      <DependentUpon>General.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigation.resx">
+      <DependentUpon>Investigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_page.resx">
+      <DependentUpon>Login_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrthopedicUnit.resx">
+      <DependentUpon>OrthopedicUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrthopedicUnit_Calender.resx">
+      <DependentUpon>OrthopedicUnit_Calender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_Record.resx">
+      <DependentUpon>Patient_Record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Physio Devices.resx">
+      <DependentUpon>Physio Devices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Physio.resx">
+      <DependentUpon>Physio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Physiotherape_Calender.resx">
+      <DependentUpon>Physiotherape_Calender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Physiotherapy.resx">
+      <DependentUpon>Physiotherapy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prescription.resx">
+      <DependentUpon>prescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Records.resx">
+      <DependentUpon>Records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Services.resx">
+      <DependentUpon>Services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Devices.resx">
+      <DependentUpon>View_Devices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Program.resx">
+      <DependentUpon>View_Program.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Ray.resx">
+      <DependentUpon>X_Ray.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

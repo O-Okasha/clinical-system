@@ -30,7 +30,6 @@ namespace clinical_system_N
         private void InitializeComponent()
         {
             this.panel43 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -71,7 +70,6 @@ namespace clinical_system_N
             // 
             this.panel43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(90)))), ((int)(((byte)(130)))));
             this.panel43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel43.Controls.Add(this.button5);
             this.panel43.Controls.Add(this.button3);
             this.panel43.Controls.Add(this.button4);
             this.panel43.Controls.Add(this.button2);
@@ -81,17 +79,6 @@ namespace clinical_system_N
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(151, 691);
             this.panel43.TabIndex = 9;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button5.Location = new System.Drawing.Point(19, 358);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(103, 30);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Prefrences";
-            this.button5.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
@@ -200,7 +187,7 @@ namespace clinical_system_N
             this.label_Date.Location = new System.Drawing.Point(375, 423);
             this.label_Date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Date.Name = "label_Date";
-            this.label_Date.Size = new System.Drawing.Size(0, 16);
+            this.label_Date.Size = new System.Drawing.Size(0, 17);
             this.label_Date.TabIndex = 21;
             // 
             // label_Clinic
@@ -209,7 +196,7 @@ namespace clinical_system_N
             this.label_Clinic.Location = new System.Drawing.Point(511, 277);
             this.label_Clinic.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Clinic.Name = "label_Clinic";
-            this.label_Clinic.Size = new System.Drawing.Size(0, 16);
+            this.label_Clinic.Size = new System.Drawing.Size(0, 17);
             this.label_Clinic.TabIndex = 20;
             // 
             // label_Last_Name
@@ -218,7 +205,7 @@ namespace clinical_system_N
             this.label_Last_Name.Location = new System.Drawing.Point(535, 247);
             this.label_Last_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Last_Name.Name = "label_Last_Name";
-            this.label_Last_Name.Size = new System.Drawing.Size(0, 16);
+            this.label_Last_Name.Size = new System.Drawing.Size(0, 17);
             this.label_Last_Name.TabIndex = 19;
             // 
             // label_First_Name
@@ -227,7 +214,7 @@ namespace clinical_system_N
             this.label_First_Name.Location = new System.Drawing.Point(365, 247);
             this.label_First_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_First_Name.Name = "label_First_Name";
-            this.label_First_Name.Size = new System.Drawing.Size(0, 16);
+            this.label_First_Name.Size = new System.Drawing.Size(0, 17);
             this.label_First_Name.TabIndex = 18;
             // 
             // label_Patient_ID
@@ -236,7 +223,7 @@ namespace clinical_system_N
             this.label_Patient_ID.Location = new System.Drawing.Point(548, 191);
             this.label_Patient_ID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Patient_ID.Name = "label_Patient_ID";
-            this.label_Patient_ID.Size = new System.Drawing.Size(0, 16);
+            this.label_Patient_ID.Size = new System.Drawing.Size(0, 17);
             this.label_Patient_ID.TabIndex = 17;
             // 
             // label_Phone_Number
@@ -245,7 +232,7 @@ namespace clinical_system_N
             this.label_Phone_Number.Location = new System.Drawing.Point(376, 191);
             this.label_Phone_Number.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Phone_Number.Name = "label_Phone_Number";
-            this.label_Phone_Number.Size = new System.Drawing.Size(0, 16);
+            this.label_Phone_Number.Size = new System.Drawing.Size(0, 17);
             this.label_Phone_Number.TabIndex = 16;
             // 
             // label10
@@ -447,7 +434,7 @@ namespace clinical_system_N
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1459, 811);
+            this.ClientSize = new System.Drawing.Size(1458, 811);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel46);
@@ -470,7 +457,6 @@ namespace clinical_system_N
         #endregion
 
         private System.Windows.Forms.Panel panel43;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;

@@ -178,8 +178,8 @@ namespace clinical_system_N
                         dataReader.Close();
                         db.CloseConnection();
                     }
-                     q = string.Format("INSERT INTO DOCTOR VALUES('{0}', '{1}', {2}, '{3}', '{4}')",
-                        licsenceNumber.Text, emp, specialization.Text, address.Text);
+                    q = string.Format("INSERT INTO DOCTOR VALUES('{0}', '{1}', {2}, '{3}', '{4}')",
+                       licsenceNumber.Text, emp, specialization.Text, address.Text);
                     if (db.OpenConnection())
                     {
                         MySqlCommand cmd = new MySqlCommand(q, db.connection);
@@ -208,7 +208,7 @@ namespace clinical_system_N
         private void button7_Click(object sender, EventArgs e)
         {
             this.Hide();
-            patient_record C29 = new patient_record();
+            Records C29 = new Records();
             C29.Show();
         }
 
@@ -221,7 +221,7 @@ namespace clinical_system_N
 
         private void Admin_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

@@ -126,7 +126,7 @@ namespace clinical_system_N
         {
             this.Hide();
             OrthopedicUnit_Calender C12 = new OrthopedicUnit_Calender();
-            C12.Show();       
+            C12.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)

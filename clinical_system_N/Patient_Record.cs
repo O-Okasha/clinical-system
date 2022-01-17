@@ -12,15 +12,15 @@ namespace clinical_system_N
 {
     public partial class patient_record : Form
     {
-       
+
         public patient_record()
 
         {
             InitializeComponent();
-            
+
 
         }
-        
+
         private void label1_Click(object sender, EventArgs e)
         {
 

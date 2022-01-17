@@ -13,10 +13,10 @@ namespace clinical_system_N
 {
     public partial class Finance : Form
     {
-        
+
         public Finance()
         {
-            
+
             InitializeComponent();
         }
 
@@ -56,7 +56,7 @@ namespace clinical_system_N
 
         private void button5_Click(object sender, EventArgs e)
         {
-            
+
 
         }
 

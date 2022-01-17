@@ -14,11 +14,11 @@ namespace clinical_system_N
 {
     public partial class AddAppointment : Form
     {
-        
+
         public AddAppointment()
         {
             InitializeComponent();
-            
+
         }
 
         private bool isValid_name(string inp)
@@ -109,8 +109,8 @@ namespace clinical_system_N
 
         private void button6_MouseClick(object sender, MouseEventArgs e)
         {
-            
-            
+
+
 
         }
 
@@ -119,7 +119,7 @@ namespace clinical_system_N
             this.Hide();
             Physiotherape_Calender C22 = new Physiotherape_Calender();
             C22.Show();
-            
+
 
         }
 
@@ -145,7 +145,7 @@ namespace clinical_system_N
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            patient_record C18 = new patient_record();
+            Records C18 = new Records();
             C18.Show();
 
         }
@@ -164,7 +164,7 @@ namespace clinical_system_N
 
         private void button9_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button4_Click(object sender, EventArgs e)

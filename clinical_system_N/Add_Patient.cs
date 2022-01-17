@@ -17,7 +17,7 @@ namespace clinical_system_N
         public Add_Patient()
         {
             InitializeComponent();
-           
+
         }
 
         private bool isValid_name(string inp)
@@ -235,10 +235,10 @@ namespace clinical_system_N
                     string status = "";
                     if (ckDivorced.Checked) { status = "D"; }
                     else if (ckMarried.Checked) { status = "M"; }
-                    else if (ckSingle.Checked) { status = "S"; } 
+                    else if (ckSingle.Checked) { status = "S"; }
                     list.Add(status);
                     list.Add(profession.Text);
-                    list.Add(city.Text);  
+                    list.Add(city.Text);
 
                     db.CUD(CrudType.insert, "EMPLOYEE", list);
 
@@ -263,7 +263,7 @@ namespace clinical_system_N
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            patient_record C33 = new patient_record();
+            Records C33 = new Records();
             C33.Show();
         }
 

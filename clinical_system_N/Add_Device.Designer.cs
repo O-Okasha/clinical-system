@@ -45,7 +45,6 @@ namespace clinical_system_N
             this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.panel43 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -65,7 +64,7 @@ namespace clinical_system_N
             this.panel2.Location = new System.Drawing.Point(149, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1289, 96);
+            this.panel2.Size = new System.Drawing.Size(1309, 96);
             this.panel2.TabIndex = 1;
             // 
             // label1
@@ -95,7 +94,7 @@ namespace clinical_system_N
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(263, 129);
+            this.panel3.Location = new System.Drawing.Point(269, 129);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(916, 562);
@@ -108,7 +107,7 @@ namespace clinical_system_N
             this.label_state.Location = new System.Drawing.Point(549, 390);
             this.label_state.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_state.Name = "label_state";
-            this.label_state.Size = new System.Drawing.Size(0, 16);
+            this.label_state.Size = new System.Drawing.Size(0, 17);
             this.label_state.TabIndex = 15;
             // 
             // label_Version_Number
@@ -117,7 +116,7 @@ namespace clinical_system_N
             this.label_Version_Number.Location = new System.Drawing.Point(469, 267);
             this.label_Version_Number.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Version_Number.Name = "label_Version_Number";
-            this.label_Version_Number.Size = new System.Drawing.Size(0, 16);
+            this.label_Version_Number.Size = new System.Drawing.Size(0, 17);
             this.label_Version_Number.TabIndex = 14;
             // 
             // label_Company_Name
@@ -126,7 +125,7 @@ namespace clinical_system_N
             this.label_Company_Name.Location = new System.Drawing.Point(469, 218);
             this.label_Company_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Company_Name.Name = "label_Company_Name";
-            this.label_Company_Name.Size = new System.Drawing.Size(0, 16);
+            this.label_Company_Name.Size = new System.Drawing.Size(0, 17);
             this.label_Company_Name.TabIndex = 13;
             // 
             // label_Device_Name
@@ -135,7 +134,7 @@ namespace clinical_system_N
             this.label_Device_Name.Location = new System.Drawing.Point(469, 167);
             this.label_Device_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Device_Name.Name = "label_Device_Name";
-            this.label_Device_Name.Size = new System.Drawing.Size(0, 16);
+            this.label_Device_Name.Size = new System.Drawing.Size(0, 17);
             this.label_Device_Name.TabIndex = 12;
             // 
             // companyName
@@ -266,7 +265,7 @@ namespace clinical_system_N
             this.panel4.Controls.Add(this.button15);
             this.panel4.Controls.Add(this.button14);
             this.panel4.Controls.Add(this.button13);
-            this.panel4.Location = new System.Drawing.Point(1287, 92);
+            this.panel4.Location = new System.Drawing.Point(1306, 92);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(152, 690);
@@ -315,7 +314,6 @@ namespace clinical_system_N
             // 
             this.panel43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(90)))), ((int)(((byte)(130)))));
             this.panel43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel43.Controls.Add(this.button5);
             this.panel43.Controls.Add(this.button3);
             this.panel43.Controls.Add(this.button4);
             this.panel43.Controls.Add(this.button2);
@@ -325,17 +323,6 @@ namespace clinical_system_N
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(151, 691);
             this.panel43.TabIndex = 10;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button5.Location = new System.Drawing.Point(19, 358);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(103, 30);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Prefrences";
-            this.button5.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
@@ -391,7 +378,7 @@ namespace clinical_system_N
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1440, 764);
+            this.ClientSize = new System.Drawing.Size(1458, 811);
             this.Controls.Add(this.panel43);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.pictureBox1);
@@ -434,7 +421,6 @@ namespace clinical_system_N
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Panel panel43;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;

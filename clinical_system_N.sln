@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinical_System_N", "clinical_system_N\Clinical_System_N.csproj", "{47CE58FA-2789-45AF-982E-109BFAD48F51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinical_System_Final", "clinical_system_N\Clinical_System_Final.csproj", "{47CE58FA-2789-45AF-982E-109BFAD48F51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

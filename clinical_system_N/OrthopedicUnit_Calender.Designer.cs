@@ -341,6 +341,7 @@
             this.fl_AppContainer.Name = "fl_AppContainer";
             this.fl_AppContainer.Size = new System.Drawing.Size(1458, 811);
             this.fl_AppContainer.TabIndex = 19;
+            this.fl_AppContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.fl_AppContainer_Paint);
             // 
             // panel1
             // 

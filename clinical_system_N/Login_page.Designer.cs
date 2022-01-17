@@ -138,7 +138,7 @@
             this.label_Email.Location = new System.Drawing.Point(368, 369);
             this.label_Email.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Email.Name = "label_Email";
-            this.label_Email.Size = new System.Drawing.Size(0, 16);
+            this.label_Email.Size = new System.Drawing.Size(0, 17);
             this.label_Email.TabIndex = 8;
             // 
             // label_Password
@@ -147,7 +147,7 @@
             this.label_Password.Location = new System.Drawing.Point(368, 437);
             this.label_Password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Password.Name = "label_Password";
-            this.label_Password.Size = new System.Drawing.Size(0, 16);
+            this.label_Password.Size = new System.Drawing.Size(0, 17);
             this.label_Password.TabIndex = 9;
             // 
             // login_page
@@ -155,7 +155,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1459, 811);
+            this.ClientSize = new System.Drawing.Size(1458, 811);
             this.Controls.Add(this.label_Password);
             this.Controls.Add(this.label_Email);
             this.Controls.Add(this.pictureBox1);
@@ -165,6 +165,7 @@
             this.Controls.Add(this.email);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "login_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

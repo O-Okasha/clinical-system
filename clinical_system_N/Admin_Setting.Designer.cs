@@ -32,6 +32,8 @@ namespace clinical_system_N
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.Salary = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.label_State = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -58,7 +60,6 @@ namespace clinical_system_N
             this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.panel43 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -68,8 +69,6 @@ namespace clinical_system_N
             this.label_Phone_Number = new System.Windows.Forms.Label();
             this.label_First_Name = new System.Windows.Forms.Label();
             this.label_Email = new System.Windows.Forms.Label();
-            this.Salary = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -130,13 +129,36 @@ namespace clinical_system_N
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // Salary
+            // 
+            this.Salary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Salary.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Salary.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.Salary.Location = new System.Drawing.Point(433, 283);
+            this.Salary.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Salary.Name = "Salary";
+            this.Salary.Size = new System.Drawing.Size(317, 22);
+            this.Salary.TabIndex = 121;
+            this.Salary.Text = "Salary\r\n";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(338, 282);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(79, 25);
+            this.label4.TabIndex = 120;
+            this.label4.Text = "Salary :";
+            this.label4.Click += new System.EventHandler(this.label4_Click_1);
+            // 
             // label_State
             // 
             this.label_State.AutoSize = true;
             this.label_State.Location = new System.Drawing.Point(533, 432);
             this.label_State.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_State.Name = "label_State";
-            this.label_State.Size = new System.Drawing.Size(0, 16);
+            this.label_State.Size = new System.Drawing.Size(0, 17);
             this.label_State.TabIndex = 119;
             // 
             // label9
@@ -145,7 +167,7 @@ namespace clinical_system_N
             this.label9.Location = new System.Drawing.Point(457, 358);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 16);
+            this.label9.Size = new System.Drawing.Size(0, 17);
             this.label9.TabIndex = 118;
             // 
             // label10
@@ -154,7 +176,7 @@ namespace clinical_system_N
             this.label10.Location = new System.Drawing.Point(457, 311);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 16);
+            this.label10.Size = new System.Drawing.Size(0, 17);
             this.label10.TabIndex = 117;
             // 
             // label11
@@ -163,7 +185,7 @@ namespace clinical_system_N
             this.label11.Location = new System.Drawing.Point(457, 265);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(0, 16);
+            this.label11.Size = new System.Drawing.Size(0, 17);
             this.label11.TabIndex = 114;
             // 
             // label12
@@ -172,7 +194,7 @@ namespace clinical_system_N
             this.label12.Location = new System.Drawing.Point(457, 164);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(0, 16);
+            this.label12.Size = new System.Drawing.Size(0, 17);
             this.label12.TabIndex = 116;
             // 
             // label13
@@ -181,7 +203,7 @@ namespace clinical_system_N
             this.label13.Location = new System.Drawing.Point(457, 214);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(0, 16);
+            this.label13.Size = new System.Drawing.Size(0, 17);
             this.label13.TabIndex = 115;
             // 
             // textBox7
@@ -408,7 +430,6 @@ namespace clinical_system_N
             // 
             this.panel43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(90)))), ((int)(((byte)(130)))));
             this.panel43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel43.Controls.Add(this.button5);
             this.panel43.Controls.Add(this.button3);
             this.panel43.Controls.Add(this.button4);
             this.panel43.Controls.Add(this.button2);
@@ -418,17 +439,6 @@ namespace clinical_system_N
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(151, 691);
             this.panel43.TabIndex = 10;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button5.Location = new System.Drawing.Point(19, 358);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(103, 30);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Prefrences";
-            this.button5.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
@@ -484,7 +494,7 @@ namespace clinical_system_N
             this.label_Confirm_password.Location = new System.Drawing.Point(727, 540);
             this.label_Confirm_password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Confirm_password.Name = "label_Confirm_password";
-            this.label_Confirm_password.Size = new System.Drawing.Size(0, 16);
+            this.label_Confirm_password.Size = new System.Drawing.Size(0, 17);
             this.label_Confirm_password.TabIndex = 118;
             // 
             // label_Password
@@ -493,7 +503,7 @@ namespace clinical_system_N
             this.label_Password.Location = new System.Drawing.Point(727, 495);
             this.label_Password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Password.Name = "label_Password";
-            this.label_Password.Size = new System.Drawing.Size(0, 16);
+            this.label_Password.Size = new System.Drawing.Size(0, 17);
             this.label_Password.TabIndex = 117;
             // 
             // label_Phone_Number
@@ -502,7 +512,7 @@ namespace clinical_system_N
             this.label_Phone_Number.Location = new System.Drawing.Point(727, 448);
             this.label_Phone_Number.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Phone_Number.Name = "label_Phone_Number";
-            this.label_Phone_Number.Size = new System.Drawing.Size(0, 16);
+            this.label_Phone_Number.Size = new System.Drawing.Size(0, 17);
             this.label_Phone_Number.TabIndex = 114;
             // 
             // label_First_Name
@@ -511,7 +521,7 @@ namespace clinical_system_N
             this.label_First_Name.Location = new System.Drawing.Point(727, 347);
             this.label_First_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_First_Name.Name = "label_First_Name";
-            this.label_First_Name.Size = new System.Drawing.Size(0, 16);
+            this.label_First_Name.Size = new System.Drawing.Size(0, 17);
             this.label_First_Name.TabIndex = 116;
             // 
             // label_Email
@@ -520,31 +530,8 @@ namespace clinical_system_N
             this.label_Email.Location = new System.Drawing.Point(727, 398);
             this.label_Email.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Email.Name = "label_Email";
-            this.label_Email.Size = new System.Drawing.Size(0, 16);
+            this.label_Email.Size = new System.Drawing.Size(0, 17);
             this.label_Email.TabIndex = 115;
-            // 
-            // Salary
-            // 
-            this.Salary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Salary.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Salary.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.Salary.Location = new System.Drawing.Point(433, 283);
-            this.Salary.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Salary.Name = "Salary";
-            this.Salary.Size = new System.Drawing.Size(317, 22);
-            this.Salary.TabIndex = 121;
-            this.Salary.Text = "Salary\r\n";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(338, 282);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 25);
-            this.label4.TabIndex = 120;
-            this.label4.Text = "Salary :";
-            this.label4.Click += new System.EventHandler(this.label4_Click_1);
             // 
             // AdminSettings
             // 
@@ -552,7 +539,7 @@ namespace clinical_system_N
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1440, 780);
+            this.ClientSize = new System.Drawing.Size(1458, 811);
             this.Controls.Add(this.label_Confirm_password);
             this.Controls.Add(this.label_Password);
             this.Controls.Add(this.label_Phone_Number);
@@ -601,7 +588,6 @@ namespace clinical_system_N
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Panel panel43;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;

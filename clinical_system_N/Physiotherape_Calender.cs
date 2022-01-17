@@ -73,5 +73,10 @@ namespace clinical_system_N
             Physiotherapy C66 = new Physiotherapy();
             C66.Show();
         }
+
+        private void fl_AppContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

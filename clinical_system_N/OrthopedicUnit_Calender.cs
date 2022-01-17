@@ -78,5 +78,10 @@ namespace clinical_system_N
         {
 
         }
+
+        private void fl_AppContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -145,7 +145,7 @@ namespace clinical_system_N
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            patient_record C24 = new patient_record();
+            Records C24 = new Records();
             C24.Show();
         }
 
@@ -166,12 +166,12 @@ namespace clinical_system_N
 
         private void button13_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
@@ -185,7 +185,7 @@ namespace clinical_system_N
             //if all inputs are true proceed to database
             if (validation)
             {
-                var x = Guid.NewGuid().ToString();  
+                var x = Guid.NewGuid().ToString();
                 DBController db = new DBController();
                 try
                 {

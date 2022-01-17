@@ -54,7 +54,6 @@ namespace clinical_system_N
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
             this.Admin = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -325,7 +324,6 @@ namespace clinical_system_N
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(90)))), ((int)(((byte)(130)))));
-            this.panel5.Controls.Add(this.button4);
             this.panel5.Controls.Add(this.Admin);
             this.panel5.Controls.Add(this.button6);
             this.panel5.Controls.Add(this.button7);
@@ -333,21 +331,9 @@ namespace clinical_system_N
             this.panel5.Location = new System.Drawing.Point(0, 98);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(152, 553);
+            this.panel5.Size = new System.Drawing.Size(152, 713);
             this.panel5.TabIndex = 106;
             this.panel5.UseWaitCursor = true;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.button4.Location = new System.Drawing.Point(19, 286);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(103, 25);
-            this.button4.TabIndex = 107;
-            this.button4.Text = "Prefrences";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.UseWaitCursor = true;
             // 
             // Admin
             // 
@@ -407,7 +393,7 @@ namespace clinical_system_N
             this.label_First_Name.Location = new System.Drawing.Point(503, 145);
             this.label_First_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_First_Name.Name = "label_First_Name";
-            this.label_First_Name.Size = new System.Drawing.Size(0, 16);
+            this.label_First_Name.Size = new System.Drawing.Size(0, 17);
             this.label_First_Name.TabIndex = 107;
             this.label_First_Name.UseWaitCursor = true;
             // 
@@ -417,7 +403,7 @@ namespace clinical_system_N
             this.label_Phone_Number.Location = new System.Drawing.Point(503, 196);
             this.label_Phone_Number.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Phone_Number.Name = "label_Phone_Number";
-            this.label_Phone_Number.Size = new System.Drawing.Size(0, 16);
+            this.label_Phone_Number.Size = new System.Drawing.Size(0, 17);
             this.label_Phone_Number.TabIndex = 108;
             this.label_Phone_Number.UseWaitCursor = true;
             // 
@@ -427,7 +413,7 @@ namespace clinical_system_N
             this.label_Email.Location = new System.Drawing.Point(503, 244);
             this.label_Email.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Email.Name = "label_Email";
-            this.label_Email.Size = new System.Drawing.Size(0, 16);
+            this.label_Email.Size = new System.Drawing.Size(0, 17);
             this.label_Email.TabIndex = 109;
             this.label_Email.UseWaitCursor = true;
             // 
@@ -437,7 +423,7 @@ namespace clinical_system_N
             this.label_Address.Location = new System.Drawing.Point(503, 292);
             this.label_Address.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Address.Name = "label_Address";
-            this.label_Address.Size = new System.Drawing.Size(0, 16);
+            this.label_Address.Size = new System.Drawing.Size(0, 17);
             this.label_Address.TabIndex = 110;
             this.label_Address.UseWaitCursor = true;
             // 
@@ -447,7 +433,7 @@ namespace clinical_system_N
             this.label_Martrial_Status.Location = new System.Drawing.Point(503, 334);
             this.label_Martrial_Status.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Martrial_Status.Name = "label_Martrial_Status";
-            this.label_Martrial_Status.Size = new System.Drawing.Size(0, 16);
+            this.label_Martrial_Status.Size = new System.Drawing.Size(0, 17);
             this.label_Martrial_Status.TabIndex = 111;
             this.label_Martrial_Status.UseWaitCursor = true;
             // 
@@ -457,7 +443,7 @@ namespace clinical_system_N
             this.label_Date_Of_Birth.Location = new System.Drawing.Point(503, 393);
             this.label_Date_Of_Birth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Date_Of_Birth.Name = "label_Date_Of_Birth";
-            this.label_Date_Of_Birth.Size = new System.Drawing.Size(0, 16);
+            this.label_Date_Of_Birth.Size = new System.Drawing.Size(0, 17);
             this.label_Date_Of_Birth.TabIndex = 112;
             this.label_Date_Of_Birth.UseWaitCursor = true;
             // 
@@ -467,7 +453,7 @@ namespace clinical_system_N
             this.label_Last_Name.Location = new System.Drawing.Point(1111, 148);
             this.label_Last_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Last_Name.Name = "label_Last_Name";
-            this.label_Last_Name.Size = new System.Drawing.Size(0, 16);
+            this.label_Last_Name.Size = new System.Drawing.Size(0, 17);
             this.label_Last_Name.TabIndex = 113;
             this.label_Last_Name.UseWaitCursor = true;
             // 
@@ -477,7 +463,7 @@ namespace clinical_system_N
             this.label_National_ID.Location = new System.Drawing.Point(1111, 196);
             this.label_National_ID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_National_ID.Name = "label_National_ID";
-            this.label_National_ID.Size = new System.Drawing.Size(0, 16);
+            this.label_National_ID.Size = new System.Drawing.Size(0, 17);
             this.label_National_ID.TabIndex = 114;
             this.label_National_ID.UseWaitCursor = true;
             // 
@@ -487,7 +473,7 @@ namespace clinical_system_N
             this.label_City.Location = new System.Drawing.Point(1111, 242);
             this.label_City.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_City.Name = "label_City";
-            this.label_City.Size = new System.Drawing.Size(0, 16);
+            this.label_City.Size = new System.Drawing.Size(0, 17);
             this.label_City.TabIndex = 115;
             this.label_City.UseWaitCursor = true;
             // 
@@ -497,7 +483,7 @@ namespace clinical_system_N
             this.label_Blood_Type.Location = new System.Drawing.Point(1111, 292);
             this.label_Blood_Type.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Blood_Type.Name = "label_Blood_Type";
-            this.label_Blood_Type.Size = new System.Drawing.Size(0, 16);
+            this.label_Blood_Type.Size = new System.Drawing.Size(0, 17);
             this.label_Blood_Type.TabIndex = 116;
             this.label_Blood_Type.UseWaitCursor = true;
             // 
@@ -507,7 +493,7 @@ namespace clinical_system_N
             this.label_Gender.Location = new System.Drawing.Point(1111, 336);
             this.label_Gender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Gender.Name = "label_Gender";
-            this.label_Gender.Size = new System.Drawing.Size(0, 16);
+            this.label_Gender.Size = new System.Drawing.Size(0, 17);
             this.label_Gender.TabIndex = 117;
             this.label_Gender.UseWaitCursor = true;
             // 
@@ -534,7 +520,7 @@ namespace clinical_system_N
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1440, 651);
+            this.ClientSize = new System.Drawing.Size(1458, 811);
             this.Controls.Add(this.password);
             this.Controls.Add(this.salary);
             this.Controls.Add(this.label_Gender);
@@ -614,7 +600,6 @@ namespace clinical_system_N
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button Admin;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
