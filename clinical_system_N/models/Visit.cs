@@ -8,8 +8,8 @@ namespace clinical_system_N.models
 {
     internal class Visit
     {
-        public string Id { get; }
-        public string Date;
+        public string Id { get;}
+        public string Date { get;}
         public string PatientName { get;}
         public string PatientID { get;}
         public string DoctorName { get;}

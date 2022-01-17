@@ -73,6 +73,38 @@ namespace clinical_system_N.models
 
         }
 
+        public bool AddPerscription(Perscription perscription)
+        {
+            if (perscription == null)
+            {
+                return false;
+            }
+            try
+            {
+                perscriptions.Add(perscription);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public bool AddVisit(Visit visit)
+        {
+            if (visit == null)
+            {
+                return false;
+            }
+            try
+            {
+                visits.Add(visit);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
 
     }
 }
