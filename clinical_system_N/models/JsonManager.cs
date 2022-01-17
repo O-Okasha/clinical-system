@@ -51,10 +51,10 @@ namespace clinical_system_N.models
             
         }
 
-        public Dictionary<string, object> deserializeToDictionary(JsonType jsonType, string patientID)
+        public Dictionary<string, JToken> deserializeToDictionary(JsonType jsonType, string patientID)
         {
             string jo = LoadJson(jsonType, patientID);
-            var values = JsonConvert.DeserializeObject<Dictionary<string, object>>(jo);
+            var values = JsonConvert.DeserializeObject<Dictionary<string, JToken>>(jo);
  //           var values2 = new Dictionary<string, object>();
 //            foreach (KeyValuePair<string, object> d in values)
 //            {

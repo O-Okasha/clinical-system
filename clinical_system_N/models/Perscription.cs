@@ -11,18 +11,17 @@ namespace clinical_system_N.models
     internal class Perscription
     {
         public string Id { get; set; }
-        public Patient Patient { get; set; }
-        public Doctor Doctor { get; set; }
+        public string patientName { get; set; }
+        public string DoctorName { get; set; }
+        public string VisitId { get; set; }
         List<PerscribedMedicine> Medication { get; set; }
-        DateTime Date { get; set; }
-        public string SDate;
+        public string SDate { get; set; }
 
         public Perscription(Patient patient, Doctor doctor)
         {
             Medication = new List<PerscribedMedicine>();
-            Date = DateTime.Now;
             Id = Guid.NewGuid().ToString();
-            SDate = Date.ToString();
+            SDate = DateTime.Now.ToString();
             Patient = patient;
             Doctor = doctor;
 
